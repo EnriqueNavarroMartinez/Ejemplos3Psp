@@ -25,7 +25,27 @@ public class CompteBancari {
                 this.setSaldo(saldoInicial);
             }
 
-            //metodos ingresar dinero
+            private int idCompte; //interBloqueo
+
+            public int getIdConter() {
+                return idCompte;//interBloqueo
+            }
+
+            public void setIdConter(int idConter) {
+                this.idCompte = idConter;//interBloqueo
+            }
+            public CompteBancari(float saldo, int idCompte){
+                this.saldo = saldo;
+                this.idCompte = idCompte;
+            }
+
+            public CompteBancari( int idCompte){
+                this.idCompte = idCompte;
+            }
+
+
+
+    //metodos ingresar dinero
             public void ingresar (float diners, String nomFil) throws Exception {
 
                 float aux;

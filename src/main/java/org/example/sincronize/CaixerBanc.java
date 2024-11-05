@@ -49,7 +49,6 @@ public class CaixerBanc implements Runnable{
                     break;
                 default:
 
-                case 2:
                     System.out.println("[" + Thread.currentThread().getName() + "] (1/2) sacando 200");
                     treure(200);
 
